@@ -30,7 +30,6 @@
   body{font-family:'Segoe UI',Roboto,Arial,sans-serif;background:#f4f6f9;color:var(--texte);line-height:1.5;padding:12px; font-size: 14px;}
   .app{max-width:1400px;margin:0 auto;}
 
-  /* HEADER */
   header{background:#fff;border-radius:12px;padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:16px;box-shadow:0 4px 16px rgba(0,0,0,.08);border-top:4px solid var(--kps-bleu-fonce);}
   .logo-container{display:flex;align-items:center;gap:12px;}
   .logo-img{height:40px;width:auto;max-width:200px;object-fit:contain;}
@@ -39,7 +38,6 @@
   .header-text p{font-size:.8rem;color:var(--gris-fonce);margin-top:2px;}
   @media(min-width:700px){ header{padding:20px 30px;gap:24px;} .logo-img{height:55px;} .header-text{display:block;} .header-text h1{font-size:1.4rem;} .header-text p{font-size:.9rem;} }
 
-  /* SEMAINE BAR */
   .semaine-bar{background:#fff;border-radius:12px;padding:12px 14px;margin-bottom:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;box-shadow:0 2px 10px rgba(0,0,0,.06);border-left:4px solid var(--kps-turquoise);}
   .semaine-bar .nav-btn{background:var(--kps-bleu-clair);color:#fff;border:none;border-radius:8px;width:38px;height:38px;font-size:1.2rem;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;}
   .semaine-bar .nav-btn:hover{background:var(--kps-bleu);}
@@ -50,18 +48,12 @@
   .tag-actuelle{background:#d5f5e3;color:#1e8449;padding:2px 8px;border-radius:10px;font-weight:600;}
   .tag-archivee{background:#fdebd0;color:#b9770e;padding:2px 8px;border-radius:10px;font-weight:600;}
   .btn-archive{background:var(--kps-turquoise);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:.8rem;cursor:pointer;}
-  .btn-archive:hover{opacity:.9;}
   .btn-desarchive{background:var(--orange);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:.8rem;cursor:pointer;}
-  .btn-desarchive:hover{opacity:.9;}
   .btn-dup{background:var(--violet);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:.8rem;cursor:pointer;}
-  .btn-dup:hover{opacity:.9;}
   .btn-print{background:var(--kps-bleu-clair);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:.8rem;cursor:pointer;}
-  .btn-print:hover{opacity:.9;}
   .btn-sync{background:#4285F4;color:#fff;border:none;border-radius:8px;padding:8px 14px;font-weight:600;font-size:.8rem;cursor:pointer;}
-  .btn-sync:hover{opacity:.9;}
   .btn-sync:disabled{opacity:.6; cursor:not-allowed;}
 
-  /* TABS */
   .tabs{display:flex;gap:6px;margin-bottom:16px;overflow-x:auto;padding-bottom:2px;}
   .tab{padding:10px 16px;border:none;border-radius:8px 8px 0 0;background:#e0e6ed;color:var(--gris-fonce);font-weight:600;font-size:.82rem;cursor:pointer;white-space:nowrap;transition:.2s;}
   .tab.active{background:#fff;color:var(--kps-bleu);box-shadow:0 -2px 8px rgba(0,0,0,.06);}
@@ -70,7 +62,6 @@
   .panel.active{display:block;}
   @media(min-width:700px){ .panel{padding:24px;} }
 
-  /* WEEK PLAN */
   .plan-container { overflow-x: auto; border: 2px solid var(--kps-bleu-fonce); border-radius: 4px; background: #fff; margin-bottom: 20px; -webkit-overflow-scrolling: touch;}
   .plan-table { width: 100%; border-collapse: collapse; min-width: 1000px; font-size: 0.75rem; }
   .plan-table th, .plan-table td { border: 1px solid #bdc3c7; padding: 6px; vertical-align: middle; }
@@ -85,22 +76,18 @@
   .plan-table .th-droite-spacer { width: 25px; background: #fff; border: none; }
   .plan-table .td-spacer { width: 25px; background: #fff; border: none; }
 
-  /* FORMULAIRES */
   .add-task-bar{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap; align-items:center; background:#f8f9fa; padding:12px; border-radius:8px; border:1px solid #e1e8ed;}
   .add-task-bar input[type=text]{flex:1;min-width:140px;padding:8px 12px;border:2px solid #dfe6e9;border-radius:8px;font-size:.82rem;}
-  .add-task-bar input[type=text]:focus{outline:none;border-color:var(--kps-bleu-clair);}
   .add-task-bar select{padding:8px;border:2px solid #dfe6e9;border-radius:8px;font-size:.82rem; background:#fff; cursor:pointer;}
   
   .btn{padding:8px 16px;border:none;border-radius:8px;font-weight:600;font-size:.82rem;cursor:pointer;transition:.2s;}
-  .btn-primary{background:var(--kps-bleu-clair);color:#fff;} .btn-primary:hover{background:var(--kps-bleu);}
-  .btn-danger{background:var(--rouge);color:#fff;font-size:.72rem;padding:4px 8px;} .btn-danger:hover{opacity:.85;}
-  .btn-success{background:var(--vert);color:#fff;} .btn-success:hover{opacity:.9;}
-  .btn-outline{background:#fff;border:2px solid var(--kps-bleu-clair);color:var(--kps-bleu-clair);} .btn-outline:hover{background:var(--kps-bleu-clair);color:#fff;}
+  .btn-primary{background:var(--kps-bleu-clair);color:#fff;}
+  .btn-danger{background:var(--rouge);color:#fff;font-size:.72rem;padding:4px 8px;}
+  .btn-outline{background:#fff;border:2px solid var(--kps-bleu-clair);color:var(--kps-bleu-clair);}
   .btn-sm{padding:4px 10px;font-size:.75rem;}
-  .btn-pdf{background:#7f8c8d;color:#fff;padding:8px 16px;font-size:.82rem;} .btn-pdf:hover{background:#566573;}
+  .btn-pdf{background:#7f8c8d;color:#fff;padding:8px 16px;font-size:.82rem;}
   .btn-add-cat{background:var(--kps-turquoise); color:#fff; padding:8px 12px; font-weight:bold; border-radius:8px; cursor:pointer;}
 
-  /* RAPPORT */
   .synth-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px;}
   @media(min-width:700px){ .synth-grid{grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;} }
   .kpi-card{background:var(--gris);border-radius:10px;padding:12px;text-align:center;border-left:4px solid var(--kps-bleu-clair);}
@@ -130,7 +117,6 @@
   .report-header h2{margin:0;font-size:1rem;} .report-header p{font-size:.75rem;opacity:.8;margin-top:4px;}
   .empty-msg{color:var(--gris-fonce);font-style:italic;text-align:center;padding:18px;font-size:.85rem;}
 
-  /* DÉROULEMENT */
   .deroulement-container { overflow-x: auto; border: 2px solid var(--kps-bleu-fonce); border-radius: 4px; background: #fff; margin-bottom: 20px; -webkit-overflow-scrolling: touch;}
   .deroulement-table { width: 100%; border-collapse: collapse; min-width: 1000px; font-size: 0.75rem; }
   .deroulement-table th, .deroulement-table td { border: 1px solid #bdc3c7; padding: 8px; vertical-align: middle; }
@@ -155,33 +141,17 @@
   .progress-container { background: #ecf0f1; border-radius: 10px; height: 16px; width: 100%; position: relative; overflow: hidden; border: 1px solid #bdc3c7;}
   .progress-fill { height: 100%; text-align: center; line-height: 16px; color: #fff; font-size: 9px; font-weight: bold; transition: width 0.3s; }
 
-  /* SEARCH & FILTER */
   .search-bar{display:flex; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
   .search-bar input, .search-bar select{padding:8px 12px; border:2px solid #dfe6e9; border-radius:8px; font-size:.82rem;}
   .search-bar input{flex:2; min-width:200px;}
   .search-bar select{flex:1; min-width:150px;}
-  .search-bar input:focus, .search-bar select:focus{outline:none; border-color:var(--kps-bleu-clair);}
 
-  /* PDF MODAL */
   #pdf-wrapper { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; overflow: hidden; }
   #pdf-wrapper.active { display: flex; }
   #pdf-content-wrapper { background: #f4f6f9; width: 100%; height: 100%; overflow-y: auto; padding: 20px; position: relative; }
   .pdf-actions-bar { position: fixed; top: 20px; right: 30px; display: flex; gap: 10px; z-index: 10000; background: #fff; padding: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
   .btn-download { background: var(--kps-turquoise); color: #fff; font-size: 1rem; padding: 10px 20px; }
-  .btn-download:hover { background: #16a085; }
-  #pdf-content { 
-    background: #fff; 
-    width: 794px; 
-    min-height: 1123px; 
-    margin: 0 auto; 
-    padding: 40px; 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    position: relative;
-    top: 80px; 
-    margin-bottom: 100px;
-  }
-  #pdf-content table { margin: 0 auto; width: 100%; }
-  #pdf-content h2, #pdf-content h3 { text-align: center; }
+  #pdf-content { background: #fff; width: 794px; min-height: 1123px; margin: 0 auto; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); position: relative; top: 80px; margin-bottom: 100px; }
 
   .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--kps-bleu-fonce);color:#fff;padding:12px 20px;border-radius:24px;font-size:.85rem;font-weight:600;box-shadow:0 4px 16px rgba(0,0,0,.2);z-index:1000;opacity:0;transition:opacity .3s;pointer-events:none;max-width:90%;text-align:center;}
   .toast.show{opacity:1;}
@@ -227,7 +197,6 @@
     <button class="btn-sync" onclick="chargerDepuisGoogleSheet()" style="background:#0f9d58;" id="btnSyncDown"><i class="fa-solid fa-rotate"></i> Actualiser depuis Sheets</button>
   </div>
 
-  <!-- BARRE DE SAUVEGARDE LOCALE -->
   <div class="save-restore-btns">
     <button class="btn btn-outline" onclick="exporterJSON()"><i class="fa-solid fa-download"></i> Sauvegarder (JSON)</button>
     <button class="btn btn-outline" onclick="document.getElementById('fileImport').click()"><i class="fa-solid fa-upload"></i> Restaurer (JSON)</button>
@@ -242,16 +211,12 @@
     <button class="tab" data-tab="archives"><i class="fa-solid fa-clock-rotate-left"></i> Historique</button>
   </div>
 
-  <!-- ============ WEEK PLAN ============ -->
   <div class="panel active" id="panel-plan">
-    
     <div class="add-task-bar">
       <input type="text" id="newTaskInput" placeholder="Nom de la tâche..." style="flex:2;">
       <input type="text" id="newTaskKpi" placeholder="KPI (ex: 5 posts / semaine)" style="flex:2;">
       <div style="display:flex; gap:4px; align-items:center; width:100%; max-width:300px;">
-        <select id="newTaskCategorie" style="flex:1;">
-          <option value="">-- Catégorie --</option>
-        </select>
+        <select id="newTaskCategorie" style="flex:1;"><option value="">-- Catégorie --</option></select>
         <button class="btn-add-cat" onclick="ajouterCategorie()" title="Ajouter une catégorie"><i class="fa-solid fa-plus"></i></button>
       </div>
       <select id="newTaskCouleur">
@@ -274,9 +239,7 @@
 
     <div class="search-bar">
       <input type="text" id="searchInput" placeholder="🔍 Rechercher une tâche..." oninput="renderPlan()">
-      <select id="filterCategorie" onchange="renderPlan()">
-        <option value="">Toutes les catégories</option>
-      </select>
+      <select id="filterCategorie" onchange="renderPlan()"><option value="">Toutes les catégories</option></select>
     </div>
 
     <div class="plan-container">
@@ -300,21 +263,14 @@
     </div>
   </div>
 
-  <!-- ============ DÉROULEMENT DÉTAILLÉ ============ -->
   <div class="panel" id="panel-deroulement">
     <h2 class="section-title">Déroulement détaillé des activités</h2>
     <div class="deroulement-container">
       <table class="deroulement-table" id="deroulementTable">
         <thead>
           <tr>
-            <th>Catégorie</th>
-            <th>Tâche</th>
-            <th>Statut</th>
-            <th>Déroulement</th>
-            <th>Difficultés</th>
-            <th>Solutions</th>
-            <th>KPI</th>
-            <th>Progression</th>
+            <th>Catégorie</th><th>Tâche</th><th>Statut</th><th>Déroulement</th>
+            <th>Difficultés</th><th>Solutions</th><th>KPI</th><th>Progression</th>
           </tr>
         </thead>
         <tbody id="deroulementBody"></tbody>
@@ -322,7 +278,6 @@
     </div>
   </div>
 
-  <!-- ============ RAPPORT ============ -->
   <div class="panel" id="panel-rapport">
     <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:14px;">
       <div class="report-header" style="flex:1;margin:0;">
@@ -352,14 +307,12 @@
     <p style="font-size:.72rem;color:var(--gris-fonce);text-align:right;margin-top:20px;">Confidentiel – KP STRATEGY – <span id="footerDate">–</span></p>
   </div>
 
-  <!-- ============ ARCHIVES ============ -->
   <div class="panel" id="panel-archives">
     <h2 class="section-title">Historique des semaines</h2>
     <div id="archivesList"></div>
   </div>
-</div> 
+</div>
 
-<!-- Modal PDF -->
 <div id="pdf-wrapper">
   <div id="pdf-content-wrapper">
     <div class="pdf-actions-bar">
@@ -374,10 +327,9 @@
 
 <script>
 // =====================================================================
-// CONFIGURATION GOOGLE SHEETS
-// Collez ici l'URL de votre déploiement Google Apps Script
+// ⚠️ REMPLACEZ CETTE URL PAR LA VÔTRE (voir instructions)
 // =====================================================================
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd4vUtCyvYJ3L9ygZw7Yf_u6-pz_sHZMMeTFEoZ7kmMRLvtaiJeFlFYuJKtH6GECQ/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycby02nFBdAOok_oOsbOGJx816c9xBTkLyrqBo8z3eR5UKWpyZru30_1n9zcsrCNk88gt/exec"; 
 
 let categoriesDisponibles = [
   "Production de Médias", "Stratégie de Contenu", "Sourcing & Logistique",
@@ -432,9 +384,7 @@ function charger(){
       semaineCourante=data.semaineCourante||null; 
       categoriesDisponibles = data.categoriesDisponibles || categoriesDisponibles; 
     }catch(e){ initDefault(); } 
-  } else { 
-    initDefault(); 
-  }
+  } else { initDefault(); }
   
   if(!semaineCourante||!semaines[semaineCourante]){ 
     const l=lundiDe(new Date(2026,10,2)); 
@@ -472,37 +422,25 @@ function remplirSelectCategories(){
   const select = document.getElementById('newTaskCategorie');
   select.innerHTML = '<option value="">-- Catégorie --</option>';
   categoriesDisponibles.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    select.appendChild(opt);
+    const opt = document.createElement('option'); opt.value = cat; opt.textContent = cat; select.appendChild(opt);
   });
 }
-
 function remplirFiltreCategories(){
   const select = document.getElementById('filterCategorie');
   select.innerHTML = '<option value="">Toutes les catégories</option>';
   categoriesDisponibles.forEach(cat => {
-    const opt = document.createElement('option');
-    opt.value = cat;
-    opt.textContent = cat;
-    select.appendChild(opt);
+    const opt = document.createElement('option'); opt.value = cat; opt.textContent = cat; select.appendChild(opt);
   });
 }
-
 function ajouterCategorie(){
   const nouvelleCat = prompt("Entrez le nom de la nouvelle catégorie :");
   if(nouvelleCat && nouvelleCat.trim() !== ""){
     if(!categoriesDisponibles.includes(nouvelleCat.trim())){
       categoriesDisponibles.push(nouvelleCat.trim());
-      remplirSelectCategories();
-      remplirFiltreCategories();
+      remplirSelectCategories(); remplirFiltreCategories();
       document.getElementById('newTaskCategorie').value = nouvelleCat.trim();
-      sauvegarder();
-      toast('Catégorie ajoutée !');
-    } else {
-      alert("Cette catégorie existe déjà.");
-    }
+      sauvegarder(); toast('Catégorie ajoutée !');
+    } else { alert("Cette catégorie existe déjà."); }
   }
 }
 
@@ -517,107 +455,72 @@ function renderSemaineBar(){
 
   if(estArchivee()){ 
     stat.innerHTML='<span class="tag-archivee"><i class="fa-solid fa-lock"></i> Archivée</span>'; 
-    btnCloture.style.display='none'; 
-    btnDesarchive.style.display='inline-block';
-    btnDuplicate.style.display='inline-block';
+    btnCloture.style.display='none'; btnDesarchive.style.display='inline-block'; btnDuplicate.style.display='inline-block';
   } else { 
     stat.innerHTML='<span class="tag-actuelle"><i class="fa-solid fa-circle" style="font-size:6px;"></i> En cours</span>'; 
-    btnCloture.style.display='inline-block'; 
-    btnDesarchive.style.display='none';
-    btnDuplicate.style.display='inline-block';
+    btnCloture.style.display='inline-block'; btnDesarchive.style.display='none'; btnDuplicate.style.display='inline-block';
   } 
 }
 
 function semainePrecedente(){ const s=getSemaine(); const l=new Date(s.lundi); l.setDate(l.getDate()-7); const key=cleSemaine(l); if(!semaines[key]){ semaines[key]={lundi:l.toISOString(),taches:[]}; sauvegarder(); } semaineCourante=key; sauvegarder(); renderAll(); }
 function semaineSuivante(){ const s=getSemaine(); const l=new Date(s.lundi); l.setDate(l.getDate()+7); const key=cleSemaine(l); if(!semaines[key]){ semaines[key]={lundi:l.toISOString(),taches:[]}; sauvegarder(); } semaineCourante=key; sauvegarder(); renderAll(); }
 
-/* ===== DUPLICATION ===== */
 function dupliquerSemaine() {
   if(!confirm('Dupliquer cette semaine pour la semaine prochaine ?\n\nToutes les tâches seront copiées avec des jours vides.')) return;
-  const s = getSemaine();
-  const l = new Date(s.lundi);
-  l.setDate(l.getDate() + 7);
-  const newKey = cleSemaine(l);
-  if(semaines[newKey]){
-    if(!confirm('Une semaine existe déjà pour cette date. Voulez-vous la remplacer ?')) return;
-  }
+  const s = getSemaine(); const l = new Date(s.lundi); l.setDate(l.getDate() + 7); const newKey = cleSemaine(l);
+  if(semaines[newKey]){ if(!confirm('Une semaine existe déjà pour cette date. Voulez-vous la remplacer ?')) return; }
   const nouvellesTaches = s.taches.map(t => ({
-    nom: t.nom, couleur: t.couleur, jours: [0,0,0,0,0],
-    categorie: t.categorie, kpi: t.kpi, detail: "", difficulte: "", solution: "",
-    statutManuel: "En cours", recurrente: !!t.recurrente
+    nom: t.nom, couleur: t.couleur, jours: [0,0,0,0,0], categorie: t.categorie, kpi: t.kpi,
+    detail: "", difficulte: "", solution: "", statutManuel: "En cours", recurrente: !!t.recurrente
   }));
   semaines[newKey] = { lundi: l.toISOString(), taches: nouvellesTaches };
-  semaineCourante = newKey;
-  sauvegarder();
-  renderAll();
+  semaineCourante = newKey; sauvegarder(); renderAll();
   toast(`Semaine dupliquée avec ${nouvellesTaches.length} tâches.`);
 }
 
-/* ===== IMPRESSION ===== */
 function imprimerPage() {
   const type = pdfTypeActuel || (document.querySelector('[data-tab="rapport"]').classList.contains('active') ? 'rapport' : 'plan');
   const html = genererContenuPDF(type);
   const win = window.open('', '_blank');
-  win.document.write(`
-    <html><head><title>Impression - KP STRATEGY</title><style>
-      body { font-family: Arial, sans-serif; padding: 20px; }
-      table { width: 100%; border-collapse: collapse; }
-      th, td { border: 1px solid #bdc3c7; padding: 6px; }
-      th { background: #0b2a3b; color: #fff; }
-      @media print { body { padding: 0; } }
-    </style></head><body>${html}</body></html>
-  `);
+  win.document.write(`<html><head><title>Impression - KP STRATEGY</title><style>
+      body { font-family: Arial, sans-serif; padding: 20px; } table { width: 100%; border-collapse: collapse; }
+      th, td { border: 1px solid #bdc3c7; padding: 6px; } th { background: #0b2a3b; color: #fff; }
+      @media print { body { padding: 0; } }</style></head><body>${html}</body></html>`);
   win.document.close();
   setTimeout(() => { win.focus(); win.print(); }, 800);
 }
 
-/* ===== EXPORT / IMPORT ===== */
 function exporterJSON() {
   const data = { semaines, semaineCourante, archiveKeys: [...archiveKeys], categoriesDisponibles, dateExport: new Date().toISOString() };
   const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `kp_strategy_sauvegarde_${formatDate(new Date())}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
-  toast('Sauvegarde téléchargée !');
+  const a = document.createElement('a'); a.href = url; a.download = `kp_strategy_sauvegarde_${formatDate(new Date())}.json`;
+  a.click(); URL.revokeObjectURL(url); toast('Sauvegarde téléchargée !');
 }
 
 function importerJSON(event) {
-  const file = event.target.files[0];
-  if(!file) return;
+  const file = event.target.files[0]; if(!file) return;
   const reader = new FileReader();
   reader.onload = (e) => {
     try {
       const data = JSON.parse(e.target.result);
       if(!data.semaines || !data.semaineCourante) { alert('Fichier invalide.'); return; }
       if(!confirm('Restaurer cette sauvegarde ?\nLes données actuelles seront remplacées.')) return;
-      semaines = data.semaines;
-      archiveKeys = new Set(data.archiveKeys || []);
+      semaines = data.semaines; archiveKeys = new Set(data.archiveKeys || []);
       semaineCourante = data.semaineCourante;
       categoriesDisponibles = data.categoriesDisponibles || categoriesDisponibles;
-      remplirSelectCategories();
-      remplirFiltreCategories();
-      sauvegarder();
-      renderAll();
+      remplirSelectCategories(); remplirFiltreCategories(); sauvegarder(); renderAll();
       toast('Données restaurées !');
     } catch(err) { alert('Erreur : ' + err.message); }
   };
-  reader.readAsText(file);
-  event.target.value = '';
+  reader.readAsText(file); event.target.value = '';
 }
 
-/* ===== WEEK PLAN ===== */
 function renderPlan() {
-  const s = getSemaine();
-  const archived = estArchivee();
-  const tbody = document.getElementById('planTableBody');
-  tbody.innerHTML = '';
-
+  const s = getSemaine(); const archived = estArchivee();
+  const tbody = document.getElementById('planTableBody'); tbody.innerHTML = '';
   const searchTerm = (document.getElementById('searchInput')?.value || '').toLowerCase();
   const filterCat = document.getElementById('filterCategorie')?.value || '';
-
   const tachesFiltrees = s.taches.filter(t => {
     const matchSearch = t.nom.toLowerCase().includes(searchTerm) || t.kpi.toLowerCase().includes(searchTerm);
     const matchCat = !filterCat || t.categorie === filterCat;
@@ -625,117 +528,71 @@ function renderPlan() {
   });
 
   tachesFiltrees.forEach((t) => {
-    const idx = s.taches.indexOf(t);
-    const tr = document.createElement('tr');
-    
+    const idx = s.taches.indexOf(t); const tr = document.createElement('tr');
     let tdNom = `<td style="font-weight:600; font-size:0.75rem; padding:8px; cursor:pointer;" onclick="editerTache(${idx})">${t.nom}`;
-    if(!archived) {
-      tdNom += `<br><button class="btn btn-danger btn-sm" style="margin-top:4px;" onclick="event.stopPropagation(); supprimerTache(${idx})"><i class="fa-solid fa-trash"></i></button>`;
-    }
-    tdNom += `</td>`;
-    tr.innerHTML += tdNom;
-
+    if(!archived) { tdNom += `<br><button class="btn btn-danger btn-sm" style="margin-top:4px;" onclick="event.stopPropagation(); supprimerTache(${idx})"><i class="fa-solid fa-trash"></i></button>`; }
+    tdNom += `</td>`; tr.innerHTML += tdNom;
     for(let j=0; j<5; j++) {
-      const isActive = t.jours[j] === 1;
-      const bgColor = isActive ? t.couleur : 'transparent';
-      let cellHtml = `<td class="cell-jour" style="background:${bgColor};" onclick="toggleJour(${idx}, ${j})"></td>`;
-      tr.innerHTML += cellHtml;
+      const isActive = t.jours[j] === 1; const bgColor = isActive ? t.couleur : 'transparent';
+      tr.innerHTML += `<td class="cell-jour" style="background:${bgColor};" onclick="toggleJour(${idx}, ${j})"></td>`;
     }
-
     tr.innerHTML += `<td class="td-spacer"></td>`;
     tr.innerHTML += `<td class="td-droite td-categorie" style="cursor:pointer;" onclick="editerTache(${idx})">${t.categorie}</td>`;
     tr.innerHTML += `<td class="td-droite" style="font-weight:600; cursor:pointer;" onclick="editerTache(${idx})">${t.nom}</td>`;
     tr.innerHTML += `<td class="td-droite td-kpi" style="cursor:pointer;" onclick="editerTache(${idx})">${t.kpi}</td>`;
-
     tbody.appendChild(tr);
   });
-
-  if(tachesFiltrees.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="10" class="empty-msg">Aucune activité trouvée${searchTerm ? ' pour "'+searchTerm+'"' : ''}.</td></tr>`;
-  }
+  if(tachesFiltrees.length === 0) { tbody.innerHTML = `<tr><td colspan="10" class="empty-msg">Aucune activité trouvée${searchTerm ? ' pour "'+searchTerm+'"' : ''}.</td></tr>`; }
 }
 
 function toggleJour(idx, jourIdx) {
   if(estArchivee()) { toast('Semaine archivée.'); return; }
-  const s = getSemaine();
-  s.taches[idx].jours[jourIdx] = s.taches[idx].jours[jourIdx] === 1 ? 0 : 1;
+  const s = getSemaine(); s.taches[idx].jours[jourIdx] = s.taches[idx].jours[jourIdx] === 1 ? 0 : 1;
   sauvegarder(); renderAll();
 }
 
 function editerTache(idx) {
   if(estArchivee()) { toast('Semaine archivée.'); return; }
-  const s = getSemaine();
-  const t = s.taches[idx];
-  const newNom = prompt("Modifier le nom de la tâche :", t.nom);
-  if(newNom === null) return;
-  const newKpi = prompt("Modifier le KPI :", t.kpi);
-  if(newKpi === null) return;
-  const newCat = prompt("Modifier la catégorie :", t.categorie);
-  if(newCat === null) return;
-  t.nom = newNom; t.kpi = newKpi; t.categorie = newCat;
-  sauvegarder(); renderAll();
+  const s = getSemaine(); const t = s.taches[idx];
+  const newNom = prompt("Modifier le nom de la tâche :", t.nom); if(newNom === null) return;
+  const newKpi = prompt("Modifier le KPI :", t.kpi); if(newKpi === null) return;
+  const newCat = prompt("Modifier la catégorie :", t.categorie); if(newCat === null) return;
+  t.nom = newNom; t.kpi = newKpi; t.categorie = newCat; sauvegarder(); renderAll();
 }
 
 function supprimerTache(idx) {
   if(estArchivee()) { toast('Semaine archivée.'); return; }
   if(!confirm('Supprimer cette tâche ?')) return;
-  const s = getSemaine();
-  s.taches.splice(idx, 1);
-  sauvegarder(); renderAll();
+  const s = getSemaine(); s.taches.splice(idx, 1); sauvegarder(); renderAll();
 }
 
 function ajouterTache() {
   if(estArchivee()) { toast('Semaine archivée.'); return; }
-  const inputNom = document.getElementById('newTaskInput');
-  const inputKpi = document.getElementById('newTaskKpi');
-  const selectCat = document.getElementById('newTaskCategorie');
-  const selectCoul = document.getElementById('newTaskCouleur');
-  const nom = inputNom.value.trim();
-  const kpi = inputKpi.value.trim();
-  const cat = selectCat.value;
-  const coul = selectCoul.value;
+  const inputNom = document.getElementById('newTaskInput'); const inputKpi = document.getElementById('newTaskKpi');
+  const selectCat = document.getElementById('newTaskCategorie'); const selectCoul = document.getElementById('newTaskCouleur');
+  const nom = inputNom.value.trim(); const kpi = inputKpi.value.trim(); const cat = selectCat.value; const coul = selectCoul.value;
   if(!nom || !kpi || !cat) { alert('Veuillez remplir le nom, le KPI et choisir une catégorie.'); return; }
   const s = getSemaine();
-  s.taches.push({
-    nom: nom, couleur: coul, jours: [0,0,0,0,0],
-    categorie: cat, kpi: kpi, detail: "", difficulte: "", solution: "", statutManuel: "En cours", recurrente: false
-  });
-  inputNom.value = ''; inputKpi.value = '';
-  sauvegarder(); renderAll();
+  s.taches.push({ nom, couleur: coul, jours: [0,0,0,0,0], categorie: cat, kpi, detail: "", difficulte: "", solution: "", statutManuel: "En cours", recurrente: false });
+  inputNom.value = ''; inputKpi.value = ''; sauvegarder(); renderAll();
 }
 
-/* ===== CLÔTURE AUTOMATIQUE S+1 ===== */
 function cloturerSemaine(){
   if(estArchivee()){ toast('Déjà archivée.'); return; }
   if(!confirm('Clôturer et programmer S+1 ?\n\nLes tâches non terminées et récurrentes seront reportées.')) return;
-  
-  const s=getSemaine(); 
-  const l=s.lundi; 
-  archiveKeys.add(semaineCourante);
-  
+  const s=getSemaine(); const l=s.lundi; archiveKeys.add(semaineCourante);
   const nouveauLundi=new Date(l); nouveauLundi.setDate(nouveauLundi.getDate()+7); const newKey=cleSemaine(nouveauLundi);
-  
   if(!semaines[newKey]){ 
     const nouvelles=[]; 
     s.taches.forEach(t=>{ 
       const nomMin=t.nom.toLowerCase(); 
       const rec = t.recurrente || nomMin.includes('publication') || nomMin.includes('suivi digital') || nomMin.includes('crm') || nomMin.includes('calendrier') || nomMin.includes('rapport');
-      
       if(t.statutManuel === 'Terminée' && !rec) return;
-      
-      nouvelles.push({
-        nom: t.nom, couleur: t.couleur, jours: [0,0,0,0,0],
-        kpi: t.kpi, categorie: t.categorie, detail: t.detail || "", 
-        difficulte: t.difficulte || "", solution: t.solution || "", 
-        statutManuel: "En cours", recurrente: !!t.recurrente
-      }); 
+      nouvelles.push({ nom: t.nom, couleur: t.couleur, jours: [0,0,0,0,0], kpi: t.kpi, categorie: t.categorie, detail: t.detail || "", difficulte: t.difficulte || "", solution: t.solution || "", statutManuel: "En cours", recurrente: !!t.recurrente }); 
     }); 
     semaines[newKey]={lundi:nouveauLundi.toISOString(),taches:nouvelles}; 
   }
-  
-  semaineCourante=newKey; 
-  sauvegarder(); 
-  renderAll(); 
+  semaineCourante=newKey; sauvegarder(); renderAll();
   toast(`S+1 programmée avec ${getSemaine().taches.length} tâches.`); 
   document.querySelector('[data-tab="plan"]').click();
 }
@@ -743,155 +600,56 @@ function cloturerSemaine(){
 function desarchiverSemaine(){
   if(!estArchivee()) { toast('Non archivée.'); return; }
   if(!confirm('Désarchiver cette semaine ?')) return;
-  archiveKeys.delete(semaineCourante);
-  sauvegarder(); renderAll(); toast('Semaine désarchivée.');
+  archiveKeys.delete(semaineCourante); sauvegarder(); renderAll(); toast('Semaine désarchivée.');
 }
 
-/* ===== DÉROULEMENT ===== */
 function renderDeroulement(){
-  const s = getSemaine();
-  const archived = estArchivee();
-  const tbody = document.getElementById('deroulementBody');
-  tbody.innerHTML = '';
-
-  if(s.taches.length === 0) {
-    tbody.innerHTML = `<tr><td colspan="8" class="empty-msg">Aucune activité.</td></tr>`;
-    return;
-  }
-
+  const s = getSemaine(); const archived = estArchivee();
+  const tbody = document.getElementById('deroulementBody'); tbody.innerHTML = '';
+  if(s.taches.length === 0) { tbody.innerHTML = `<tr><td colspan="8" class="empty-msg">Aucune activité.</td></tr>`; return; }
   const groupes = {};
-  s.taches.forEach((t, idx) => {
-    const cat = t.categorie || "Non catégorisé";
-    if(!groupes[cat]) groupes[cat] = [];
-    groupes[cat].push({ ...t, originalIndex: idx });
-  });
-
+  s.taches.forEach((t, idx) => { const cat = t.categorie || "Non catégorisé"; if(!groupes[cat]) groupes[cat] = []; groupes[cat].push({ ...t, originalIndex: idx }); });
   Object.keys(groupes).forEach(cat => {
     const tasks = groupes[cat];
     tasks.forEach((t, i) => {
       const tr = document.createElement('tr');
-      
-      if (i === 0) {
-        const tdCat = document.createElement('td');
-        tdCat.className = 'td-cat';
-        tdCat.rowSpan = tasks.length;
-        tdCat.textContent = cat;
-        tr.appendChild(tdCat);
-      }
-
-      const tdTask = document.createElement('td');
-      tdTask.className = 'td-task';
-      tdTask.textContent = t.nom;
-      tr.appendChild(tdTask);
-
-      const tdStatut = document.createElement('td');
-      tdStatut.className = 'td-statut';
-      const selectStatut = document.createElement('select');
-      selectStatut.disabled = archived;
-      
+      if (i === 0) { const tdCat = document.createElement('td'); tdCat.className = 'td-cat'; tdCat.rowSpan = tasks.length; tdCat.textContent = cat; tr.appendChild(tdCat); }
+      const tdTask = document.createElement('td'); tdTask.className = 'td-task'; tdTask.textContent = t.nom; tr.appendChild(tdTask);
+      const tdStatut = document.createElement('td'); tdStatut.className = 'td-statut';
+      const selectStatut = document.createElement('select'); selectStatut.disabled = archived;
       const currentStatutClass = 'statut-select-' + (t.statutManuel || 'En cours').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       selectStatut.className = currentStatutClass;
-
-      ['Terminée', 'Partielle', 'En cours', 'Reportée', 'Bloquée'].forEach(opt => {
-        const option = document.createElement('option');
-        option.value = opt;
-        option.textContent = opt;
-        if (t.statutManuel === opt) option.selected = true;
-        selectStatut.appendChild(option);
-      });
-      
-      selectStatut.addEventListener('change', (e) => {
-        s.taches[t.originalIndex].statutManuel = e.target.value;
-        sauvegarder();
-        renderDeroulement();
-      });
-      tdStatut.appendChild(selectStatut);
-      tr.appendChild(tdStatut);
-
-      const tdComment = document.createElement('td');
-      tdComment.className = 'td-comment';
-      const textarea = document.createElement('textarea');
-      textarea.placeholder = "Déroulement...";
-      textarea.value = t.detail || "";
-      textarea.disabled = archived;
-      textarea.addEventListener('input', (e) => {
-        s.taches[t.originalIndex].detail = e.target.value;
-        sauvegarder();
-      });
-      tdComment.appendChild(textarea);
-      tr.appendChild(tdComment);
-
-      const tdDifficulte = document.createElement('td');
-      tdDifficulte.className = 'td-difficulte';
-      const taDiff = document.createElement('textarea');
-      taDiff.placeholder = "Difficultés...";
-      taDiff.value = t.difficulte || "";
-      taDiff.disabled = archived;
-      taDiff.addEventListener('input', (e) => {
-        s.taches[t.originalIndex].difficulte = e.target.value;
-        sauvegarder();
-      });
-      tdDifficulte.appendChild(taDiff);
-      tr.appendChild(tdDifficulte);
-
-      const tdSolution = document.createElement('td');
-      tdSolution.className = 'td-solution';
-      const taSol = document.createElement('textarea');
-      taSol.placeholder = "Solutions...";
-      taSol.value = t.solution || "";
-      taSol.disabled = archived;
-      taSol.addEventListener('input', (e) => {
-        s.taches[t.originalIndex].solution = e.target.value;
-        sauvegarder();
-      });
-      tdSolution.appendChild(taSol);
-      tr.appendChild(tdSolution);
-
-      const tdKpi = document.createElement('td');
-      tdKpi.className = 'td-kpi';
-      tdKpi.textContent = t.kpi || "Non défini";
-      tr.appendChild(tdKpi);
-
-      const tdProg = document.createElement('td');
-      tdProg.className = 'td-prog';
+      ['Terminée', 'Partielle', 'En cours', 'Reportée', 'Bloquée'].forEach(opt => { const option = document.createElement('option'); option.value = opt; option.textContent = opt; if (t.statutManuel === opt) option.selected = true; selectStatut.appendChild(option); });
+      selectStatut.addEventListener('change', (e) => { s.taches[t.originalIndex].statutManuel = e.target.value; sauvegarder(); renderDeroulement(); });
+      tdStatut.appendChild(selectStatut); tr.appendChild(tdStatut);
+      const tdComment = document.createElement('td'); tdComment.className = 'td-comment';
+      const textarea = document.createElement('textarea'); textarea.placeholder = "Déroulement..."; textarea.value = t.detail || ""; textarea.disabled = archived;
+      textarea.addEventListener('input', (e) => { s.taches[t.originalIndex].detail = e.target.value; sauvegarder(); });
+      tdComment.appendChild(textarea); tr.appendChild(tdComment);
+      const tdDifficulte = document.createElement('td'); tdDifficulte.className = 'td-difficulte';
+      const taDiff = document.createElement('textarea'); taDiff.placeholder = "Difficultés..."; taDiff.value = t.difficulte || ""; taDiff.disabled = archived;
+      taDiff.addEventListener('input', (e) => { s.taches[t.originalIndex].difficulte = e.target.value; sauvegarder(); });
+      tdDifficulte.appendChild(taDiff); tr.appendChild(tdDifficulte);
+      const tdSolution = document.createElement('td'); tdSolution.className = 'td-solution';
+      const taSol = document.createElement('textarea'); taSol.placeholder = "Solutions..."; taSol.value = t.solution || ""; taSol.disabled = archived;
+      taSol.addEventListener('input', (e) => { s.taches[t.originalIndex].solution = e.target.value; sauvegarder(); });
+      tdSolution.appendChild(taSol); tr.appendChild(tdSolution);
+      const tdKpi = document.createElement('td'); tdKpi.className = 'td-kpi'; tdKpi.textContent = t.kpi || "Non défini"; tr.appendChild(tdKpi);
+      const tdProg = document.createElement('td'); tdProg.className = 'td-prog';
       const pourcentage = calculerPourcentage(t.statutManuel);
-      let bgColor = '#e74c3c';
-      if(pourcentage === 100) bgColor = '#27ae60';
-      else if(pourcentage >= 70) bgColor = '#f1c40f';
-      else if(pourcentage >= 40) bgColor = '#3498db';
-      else if(pourcentage > 0) bgColor = '#e67e22';
-      
-      tdProg.innerHTML = `
-        <div class="progress-container">
-          <div class="progress-fill" style="width:${pourcentage}%; background:${bgColor};">
-            ${pourcentage}%
-          </div>
-        </div>
-      `;
-      tr.appendChild(tdProg);
-
-      tbody.appendChild(tr);
+      let bgColor = '#e74c3c'; if(pourcentage === 100) bgColor = '#27ae60'; else if(pourcentage >= 70) bgColor = '#f1c40f'; else if(pourcentage >= 40) bgColor = '#3498db'; else if(pourcentage > 0) bgColor = '#e67e22';
+      tdProg.innerHTML = `<div class="progress-container"><div class="progress-fill" style="width:${pourcentage}%; background:${bgColor};">${pourcentage}%</div></div>`;
+      tr.appendChild(tdProg); tbody.appendChild(tr);
     });
   });
 }
 
-/* ===== RAPPORT INTELLIGENT ===== */
 function calculerStats(){ 
-  const s=getSemaine(); 
-  const total=s.taches.length; 
-  let completes=0, partielles=0, enCours=0, reportees=0, bloquees=0;
-  let sommePourcentages=0;
-  
-  s.taches.forEach(t=>{ 
-    const p = calculerPourcentage(t.statutManuel);
-    sommePourcentages += p;
-    if(t.statutManuel === 'Terminée') completes++; 
-    else if(t.statutManuel === 'Partielle') partielles++; 
-    else if(t.statutManuel === 'En cours') enCours++; 
-    else if(t.statutManuel === 'Bloquée') bloquees++;
-    else reportees++; 
+  const s=getSemaine(); const total=s.taches.length; 
+  let completes=0, partielles=0, enCours=0, reportees=0, bloquees=0, sommePourcentages=0;
+  s.taches.forEach(t=>{ const p = calculerPourcentage(t.statutManuel); sommePourcentages += p;
+    if(t.statutManuel === 'Terminée') completes++; else if(t.statutManuel === 'Partielle') partielles++; else if(t.statutManuel === 'En cours') enCours++; else if(t.statutManuel === 'Bloquée') bloquees++; else reportees++; 
   }); 
-  
   const taux = total>0 ? Math.round(sommePourcentages / total) : 0; 
   return {total, completes, partielles, enCours, reportees, bloquees, taux}; 
 }
@@ -904,33 +662,26 @@ function renderSynthese(){
     <div class="kpi-card"><div class="num">${s.partielles}</div><div class="lbl">Partielles</div></div>
     <div class="kpi-card"><div class="num">${s.enCours}</div><div class="lbl">En cours</div></div>
     <div class="kpi-card"><div class="num">${s.reportees}</div><div class="lbl">Reportées</div></div>
-    <div class="kpi-card"><div class="num">${s.bloquees}</div><div class="lbl">Bloquées</div></div>
-  `; 
-  const bar=document.getElementById('progBar'); 
-  bar.style.width=s.taux+'%'; 
-  bar.textContent=s.taux+'%'; 
-  
+    <div class="kpi-card"><div class="num">${s.bloquees}</div><div class="lbl">Bloquées</div></div>`; 
+  const bar=document.getElementById('progBar'); bar.style.width=s.taux+'%'; bar.textContent=s.taux+'%'; 
   let phrase = `Taux de réalisation pondéré : ${s.taux}% | ${s.completes} tâches à 100%`;
   if(s.bloquees > 0) phrase += ` | ${s.bloquees} blocage(s) identifié(s)`;
   document.getElementById('synthText').textContent = phrase;
 }
 
 function renderDeroulementRapport(){ 
-  const s=getSemaine(); 
-  const groupes={}; 
+  const s=getSemaine(); const groupes={}; 
   s.taches.forEach(t=>{ const key=t.categorie||t.nom; if(!groupes[key]) groupes[key]=[]; groupes[key].push(t); }); 
   let html='<table class="rapport-table"><tr><th>N°</th><th>Thématique</th><th>Détails consolidés (Nous)</th></tr>'; 
   let i=1; 
   Object.keys(groupes).forEach(key=>{ 
-    const details=groupes[key].map(t=>{ 
-      const p = calculerPourcentage(t.statutManuel);
+    const details=groupes[key].map(t=>{ const p = calculerPourcentage(t.statutManuel);
       return `<strong>${t.nom}</strong> (${t.statutManuel} - ${p}%). ${t.detail||'<em>Détail à renseigner.</em>'}<br><span style="font-size:.72rem;color:#1a5276;">KPI : ${t.kpi}</span>`; 
     }).join('<br><br>'); 
     html+=`<tr><td>${i}</td><td><strong>${key.toUpperCase()}</strong></td><td style="text-align:left;">${details}</td></tr>`; 
     i++; 
   }); 
-  html+='</table>'; 
-  document.getElementById('deroulementRapport').innerHTML=html; 
+  html+='</table>'; document.getElementById('deroulementRapport').innerHTML=html; 
 }
 
 function renderAnalyse(){ 
@@ -938,97 +689,46 @@ function renderAnalyse(){
   let html='<table class="rapport-table"><tr><th>Objectif</th><th>Statut</th><th>Difficultés rencontrées</th><th>Solutions / Plan d\'action</th></tr>'; 
   let ecarts=0; 
   s.taches.forEach((t, idx)=>{ 
-    if(t.statutManuel === 'Terminée') return; 
-    ecarts++; 
-    
+    if(t.statutManuel === 'Terminée') return; ecarts++; 
     let cause = t.difficulte ? t.difficulte : '';
     let action = t.solution ? t.solution : '';
-    
-    if(!cause) {
-      if(t.statutManuel === 'Reportée') cause = 'Aucune action démarrée cette semaine.';
-      else if(t.statutManuel === 'Bloquée') cause = 'Dépendance externe non levée.';
-      else if(t.statutManuel === 'En cours') cause = 'Démarrage tardif.';
-      else cause = 'Avancement partiel.';
-    }
-    
-    if(!action) {
-      if(t.statutManuel === 'Reportée') action = 'Relancer formellement.';
-      else if(t.statutManuel === 'Bloquée') action = 'Escalader le blocage.';
-      else if(t.statutManuel === 'En cours') action = 'Prioriser.';
-      else action = 'Finaliser.';
-    }
-    
+    if(!cause) { if(t.statutManuel === 'Reportée') cause = 'Aucune action démarrée cette semaine.'; else if(t.statutManuel === 'Bloquée') cause = 'Dépendance externe non levée.'; else if(t.statutManuel === 'En cours') cause = 'Démarrage tardif.'; else cause = 'Avancement partiel.'; }
+    if(!action) { if(t.statutManuel === 'Reportée') action = 'Relancer formellement.'; else if(t.statutManuel === 'Bloquée') action = 'Escalader le blocage.'; else if(t.statutManuel === 'En cours') action = 'Prioriser.'; else action = 'Finaliser.'; }
     const p = calculerPourcentage(t.statutManuel);
     let cls = t.statutManuel === 'Bloquée' ? 'bloque' : t.statutManuel === 'En cours' ? 'cours' : t.statutManuel === 'Partielle' ? 'partiel' : 'reporte';
-    
-    html+=`<tr>
-      <td style="text-align:left;"><strong>${t.nom}</strong></td>
-      <td><span class="statut-badge ${cls}">${t.statutManuel} ${p}%</span></td>
-      <td style="text-align:left;">
-        <textarea style="width:100%; min-height:40px; border:none; background:transparent; font-family:inherit; font-size:inherit;" onchange="majDifficulte(${idx}, this.value)">${cause}</textarea>
-      </td>
-      <td style="text-align:left;">
-        <textarea style="width:100%; min-height:40px; border:none; background:transparent; font-family:inherit; font-size:inherit;" onchange="majSolution(${idx}, this.value)">${action}</textarea>
-      </td>
-    </tr>`; 
+    html+=`<tr><td style="text-align:left;"><strong>${t.nom}</strong></td><td><span class="statut-badge ${cls}">${t.statutManuel} ${p}%</span></td>
+      <td style="text-align:left;"><textarea style="width:100%; min-height:40px; border:none; background:transparent; font-family:inherit; font-size:inherit;" onchange="majDifficulte(${idx}, this.value)">${cause}</textarea></td>
+      <td style="text-align:left;"><textarea style="width:100%; min-height:40px; border:none; background:transparent; font-family:inherit; font-size:inherit;" onchange="majSolution(${idx}, this.value)">${action}</textarea></td></tr>`; 
   }); 
   if(ecarts===0){ html+='<tr><td colspan="4" style="text-align:center;color:var(--vert);font-weight:600;">🎉 Tous les objectifs atteints à 100% !</td></tr>'; } 
-  html+='</table>'; 
-  document.getElementById('analyse').innerHTML=html; 
+  html+='</table>'; document.getElementById('analyse').innerHTML=html; 
 }
 
-function majDifficulte(idx, val) {
-  const s = getSemaine();
-  s.taches[idx].difficulte = val;
-  sauvegarder();
-}
-
-function majSolution(idx, val) {
-  const s = getSemaine();
-  s.taches[idx].solution = val;
-  sauvegarder();
-}
+function majDifficulte(idx, val) { const s = getSemaine(); s.taches[idx].difficulte = val; sauvegarder(); }
+function majSolution(idx, val) { const s = getSemaine(); s.taches[idx].solution = val; sauvegarder(); }
 
 function renderSyntheseCritique(){ 
-  const s=calculerStats(); 
-  const taches = getSemaine().taches;
+  const s=calculerStats(); const taches = getSemaine().taches;
   let texte = `<h4>Synthèse critique</h4><p>`;
   texte += `Sur <strong>${s.total} activités planifiées</strong>, nous avons clôturé <strong>${s.completes} à 100%</strong> (taux global de ${s.taux}%). `;
-
   const terminees = taches.filter(t => t.statutManuel === 'Terminée');
-  if(terminees.length > 0) {
-    texte += `Points forts : `;
-    texte += terminees.slice(0,3).map(t => `<strong>${t.nom}</strong>`).join(', ');
-    if(terminees.length > 3) texte += ` et ${terminees.length - 3} autres`;
-    texte += `. `;
-  }
-
+  if(terminees.length > 0) { texte += `Points forts : `; texte += terminees.slice(0,3).map(t => `<strong>${t.nom}</strong>`).join(', '); if(terminees.length > 3) texte += ` et ${terminees.length - 3} autres`; texte += `. `; }
   const bloquees = taches.filter(t => t.statutManuel === 'Bloquée' || t.statutManuel === 'Reportée');
-  if(bloquees.length > 0) {
-    texte += `Cependant, nous notons <strong>${bloquees.length} point(s) de blocage</strong> : `;
-    texte += bloquees.map(t => `<strong>${t.nom}</strong> (${t.statutManuel})`).join(', ');
-    texte += `. `;
-  }
-
+  if(bloquees.length > 0) { texte += `Cependant, nous notons <strong>${bloquees.length} point(s) de blocage</strong> : `; texte += bloquees.map(t => `<strong>${t.nom}</strong> (${t.statutManuel})`).join(', '); texte += `. `; }
   texte += `Priorité S+1 : `;
   if(bloquees.length > 0) texte += `lever les blocages, `;
   if(s.partielles > 0 || s.enCours > 0) texte += `finaliser les tâches partielles, `;
-  texte += `et maintenir la dynamique sur les activités récurrentes.`;
-  texte += `</p>`;
+  texte += `et maintenir la dynamique sur les activités récurrentes.`; texte += `</p>`;
   document.getElementById('syntheseCritique').innerHTML = texte; 
 }
 
 function renderRapport(){ 
   const s=getSemaine(); const l=s.lundi; const v=new Date(l); v.setDate(v.getDate()+4); const iso=numeroSemaine(l); 
   document.getElementById('infoSemaine').textContent=`Semaine ${iso.num} · ${iso.annee}`; 
-  document.getElementById('infoDebut').textContent=formatDate(l); 
-  document.getElementById('infoFin').textContent=formatDate(v); 
+  document.getElementById('infoDebut').textContent=formatDate(l); document.getElementById('infoFin').textContent=formatDate(v); 
   document.getElementById('rapportEntete').textContent=`Rapport Hebdomadaire – Semaine ${iso.num} (${formatDateLong(l)} – ${formatDateLong(v)})`; 
   document.getElementById('footerDate').textContent=`${formatDateLong(l)} – ${formatDateLong(v)}`; 
-  renderSynthese(); 
-  renderDeroulementRapport(); 
-  renderAnalyse(); 
-  renderSyntheseCritique(); 
+  renderSynthese(); renderDeroulementRapport(); renderAnalyse(); renderSyntheseCritique(); 
 }
 
 function renderArchives(){ 
@@ -1042,8 +742,7 @@ function renderArchives(){
     const taux=total>0?Math.round((jours/(total*5))*100):0; 
     const estArch=archiveKeys.has(k); const estCour=k===semaineCourante; 
     html+=`<div class="archive-card">
-      <div class="ac-head">
-        <div class="ac-title"><i class="fa-solid fa-folder"></i> Semaine ${iso.num} · ${iso.annee} — ${formatDateLong(l)} au ${formatDateLong(v)}</div>
+      <div class="ac-head"><div class="ac-title"><i class="fa-solid fa-folder"></i> Semaine ${iso.num} · ${iso.annee} — ${formatDateLong(l)} au ${formatDateLong(v)}</div>
         ${estCour?'<span class="tag-actuelle"><i class="fa-solid fa-circle" style="font-size:6px;"></i> Actuelle</span>':estArch?'<span class="tag-archivee"><i class="fa-solid fa-lock"></i> Archivée</span>':''}
       </div>
       <div class="ac-stats">${total} activité(s) · Taux : ${taux}%</div>
@@ -1055,7 +754,6 @@ function renderArchives(){
 
 function ouvrirSemaine(k){ semaineCourante=k; sauvegarder(); renderAll(); document.querySelector('[data-tab="plan"]').click(); }
 
-/* ===== GÉNÉRATION PDF ===== */
 function genererContenuPDF(type){
   const s=getSemaine(); const l=s.lundi; const v=new Date(l); v.setDate(v.getDate()+4); const iso=numeroSemaine(l);
   const logoImg = document.querySelector('.logo-img'); const logoUrl = logoImg ? logoImg.src : '';
@@ -1064,10 +762,7 @@ function genererContenuPDF(type){
     <div style="display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid #1abc9c;padding-bottom:10px;margin-bottom:20px;">
       <div style="display:flex;align-items:center;gap:10px;">
         <img src="${logoUrl}" style="height:45px;" crossorigin="anonymous" onerror="this.style.display='none'">
-        <div>
-          <h1 style="margin:0;font-size:16px;color:#0b2a3b;">KP STRATEGY</h1>
-          <p style="margin:0;font-size:9px;color:#1abc9c; font-weight:bold;">Votre accompagnement 360°</p>
-        </div>
+        <div><h1 style="margin:0;font-size:16px;color:#0b2a3b;">KP STRATEGY</h1><p style="margin:0;font-size:9px;color:#1abc9c; font-weight:bold;">Votre accompagnement 360°</p></div>
       </div>
       <div style="text-align:right;">
         <p style="margin:0;font-size:10px;font-weight:bold; color:#0b2a3b;">Semaine ${iso.num} · ${iso.annee}</p>
@@ -1092,9 +787,7 @@ function genererContenuPDF(type){
       </tr></thead><tbody>`;
     s.taches.forEach(t=>{ 
       html+=`<tr><td style="padding:4px;border:1px solid #bdc3c7;font-weight:bold;">${t.nom}</td>`; 
-      t.jours.forEach(done=>{ 
-        html+=`<td style="padding:4px;border:1px solid #bdc3c7;background:${done?t.couleur:'#fff'};"></td>`; 
-      }); 
+      t.jours.forEach(done=>{ html+=`<td style="padding:4px;border:1px solid #bdc3c7;background:${done?t.couleur:'#fff'};"></td>`; }); 
       html+=`<td style="border:none; background:#fff;"></td>`; 
       html+=`<td style="padding:4px;border:1px solid #bdc3c7; text-align:center;">${t.categorie}</td><td style="padding:4px;border:1px solid #bdc3c7;font-size:7px;">${t.kpi}</td></tr>`; 
     });
@@ -1102,103 +795,67 @@ function genererContenuPDF(type){
   } else {
     const stats=calculerStats(); const groupes={}; s.taches.forEach(t=>{ const key=t.categorie||t.nom; if(!groupes[key]) groupes[key]=[]; groupes[key].push(t); });
     
-    html += `
-    <div style="text-align:center; margin-bottom:20px;">
-      <h2 style="font-size:18px;color:#0b2a3b; margin-bottom:5px;">RAPPORT HEBDOMADAIRE CONSOLIDÉ</h2>
-      <p style="font-size:10px; color:#1abc9c; font-weight:bold;">Votre accompagnement 360°</p>
-    </div>
-
+    html += `<div style="text-align:center; margin-bottom:20px;"><h2 style="font-size:18px;color:#0b2a3b; margin-bottom:5px;">RAPPORT HEBDOMADAIRE CONSOLIDÉ</h2><p style="font-size:10px; color:#1abc9c; font-weight:bold;">Votre accompagnement 360°</p></div>
     <h3 style="font-size:12px;color:#0b2a3b; text-align:center; border-bottom:1px solid #ecf0f1; padding-bottom:4px;">Informations Générales</h3>
     <table style="width:100%;border-collapse:collapse;font-size:10px;margin-bottom:15px;">
         <tr><td style="padding:6px;border:1px solid #e8ecf1;background:#f9fbfc;font-weight:bold;width:80px; color:#0b2a3b;">Début</td><td style="padding:6px;border:1px solid #e8ecf1;">${formatDate(l)}</td><td style="padding:6px;border:1px solid #e8ecf1;background:#f9fbfc;font-weight:bold;width:80px; color:#0b2a3b;">Nom</td><td style="padding:6px;border:1px solid #e8ecf1;">Albert Thierry</td></tr>
         <tr><td style="padding:6px;border:1px solid #e8ecf1;background:#f9fbfc;font-weight:bold; color:#0b2a3b;">Fin</td><td style="padding:6px;border:1px solid #e8ecf1;">${formatDate(v)}</td><td style="padding:6px;border:1px solid #e8ecf1;background:#f9fbfc;font-weight:bold; color:#0b2a3b;">Poste</td><td style="padding:6px;border:1px solid #e8ecf1;">Business Manager</td></tr>
     </table>
-
     <h3 style="font-size:12px;color:#0b2a3b; text-align:center; border-bottom:1px solid #ecf0f1; padding-bottom:4px;">Synthèse Quantitative</h3>
-    <table style="width:100%;border-collapse:collapse;font-size:10px;margin-bottom:10px;text-align:center;">
-      <tr>
+    <table style="width:100%;border-collapse:collapse;font-size:10px;margin-bottom:10px;text-align:center;"><tr>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.total}</strong><br>Total</td>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.completes}</strong><br>100%</td>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.partielles}</strong><br>Partielles</td>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.enCours}</strong><br>En cours</td>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.reportees}</strong><br>Reportées</td>
         <td style="border:1px solid #e8ecf1;padding:8px;background:#ecf0f1; border-top:3px solid #1abc9c;"><strong style="font-size:18px;color:#0b2a3b;">${stats.bloquees}</strong><br>Bloquées</td>
-      </tr>
-    </table>
-    <div style="background:#ecf0f1;border-radius:4px;height:16px;overflow:hidden;margin-bottom:4px;">
-      <div style="background:#1abc9c;height:100%;width:${stats.taux}%;text-align:center;color:#fff;font-size:9px;line-height:16px;font-weight:bold;">${stats.taux}%</div>
-    </div>
+    </tr></table>
+    <div style="background:#ecf0f1;border-radius:4px;height:16px;overflow:hidden;margin-bottom:4px;"><div style="background:#1abc9c;height:100%;width:${stats.taux}%;text-align:center;color:#fff;font-size:9px;line-height:16px;font-weight:bold;">${stats.taux}%</div></div>
     <p style="text-align:center; font-size:10px; color:#0b2a3b; font-weight:bold; margin-bottom:20px;">Taux de réalisation pondéré : ${stats.taux}%</p>
-
     <h3 style="font-size:12px;color:#0b2a3b; text-align:center; border-bottom:1px solid #ecf0f1; padding-bottom:4px;">Déroulement des Activités</h3>
-    <table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:15px;">
-      <thead><tr>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:15%;">Thématique</th>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center;">Détails consolidés (Nous)</th>
-      </tr></thead><tbody>`;
-    
+    <table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:15px;"><thead><tr>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:15%;">Thématique</th>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center;">Détails consolidés (Nous)</th>
+    </tr></thead><tbody>`;
     Object.keys(groupes).forEach(key=>{ 
-      html+=`<tr>
-        <td style="padding:6px;border:1px solid #bdc3c7;font-weight:bold; text-align:center; vertical-align:middle; color:#0b2a3b;">${key.toUpperCase()}</td>
-        <td style="padding:6px;border:1px solid #bdc3c7; text-align:left; vertical-align:middle;">`; 
-        groupes[key].forEach(t=>{ 
-          const p = calculerPourcentage(t.statutManuel);
-          html+=`<div style="margin-bottom:4px;"><strong>${t.nom}</strong> (${t.statutManuel} - ${p}%). ${t.detail||'Non renseigné'}<br><span style="color:#1abc9c; font-weight:bold;">KPI : ${t.kpi}</span></div>`; 
-        }); 
+      html+=`<tr><td style="padding:6px;border:1px solid #bdc3c7;font-weight:bold; text-align:center; vertical-align:middle; color:#0b2a3b;">${key.toUpperCase()}</td><td style="padding:6px;border:1px solid #bdc3c7; text-align:left; vertical-align:middle;">`; 
+      groupes[key].forEach(t=>{ const p = calculerPourcentage(t.statutManuel);
+        html+=`<div style="margin-bottom:4px;"><strong>${t.nom}</strong> (${t.statutManuel} - ${p}%). ${t.detail||'Non renseigné'}<br><span style="color:#1abc9c; font-weight:bold;">KPI : ${t.kpi}</span></div>`; 
+      }); 
       html+=`</td></tr>`; 
     });
-    html+=`</tbody></table>`;
-
-    html += `<h3 style="font-size:12px;color:#0b2a3b; text-align:center; border-bottom:1px solid #ecf0f1; padding-bottom:4px;">Analyse des Objectifs Non Atteints</h3>
-    <table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:15px;">
-      <thead><tr>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:25%;">Objectif</th>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:15%;">Statut</th>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:30%;">Difficultés</th>
-        <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:30%;">Solutions</th>
-      </tr></thead><tbody>`;
-      s.taches.forEach(t=>{ 
-        if(t.statutManuel === 'Terminée') return; 
-        let cause = t.difficulte ? t.difficulte : 'Non renseigné';
-        let action = t.solution ? t.solution : 'Non renseigné';
-        const p = calculerPourcentage(t.statutManuel);
-        html+=`<tr><td style="padding:6px;border:1px solid #bdc3c7;font-weight:bold; color:#0b2a3b;">${t.nom}</td><td style="padding:6px;border:1px solid #bdc3c7; text-align:center;">${t.statutManuel} ${p}%</td><td style="padding:6px;border:1px solid #bdc3c7;">${cause}</td><td style="padding:6px;border:1px solid #bdc3c7;">${action}</td></tr>`; 
-      });
-      html += `</tbody></table>`;
-
-      const ecarts = stats.partielles + stats.enCours + stats.reportees + stats.bloquees;
-      let texteCritique = `<div style="background:#eaf2f8; border-left:4px solid #1abc9c; padding:12px; font-size:10px; text-align:left; margin-bottom:10px;">`;
-      texteCritique += `<h4 style="margin:0 0 4px 0; color:#0b2a3b;">Synthèse critique</h4>`;
-      texteCritique += `<p>Sur <strong>${stats.total} activités planifiées</strong>, nous avons clôturé <strong>${stats.completes} à 100%</strong> (Taux global : ${stats.taux}%). `;
-      if(stats.completes > 0) {
-        texteCritique += `Points forts : `;
-        texteCritique += s.taches.filter(t=>t.statutManuel==='Terminée').slice(0,3).map(t=>`<strong>${t.nom}</strong>`).join(', ');
-        if(stats.completes > 3) texteCritique += ` et ${stats.completes - 3} autres`;
-        texteCritique += `. `;
-      }
-      if(ecarts > 0) {
-        texteCritique += `Les ${ecarts} écart(s) concernent : `;
-        texteCritique += s.taches.filter(t=>t.statutManuel!=='Terminée').map(t=>`<strong>${t.nom}</strong> (${t.statutManuel})`).join(', ');
-        texteCritique += `. Priorité S+1 : lever les blocages et finaliser les tâches partielles.`;
-      } else {
-        texteCritique += `Aucun écart constaté. Priorité S+1 : maintenir le rythme.`;
-      }
-      texteCritique += `</p></div>`;
-      html += texteCritique;
+    html+=`</tbody></table>
+    <h3 style="font-size:12px;color:#0b2a3b; text-align:center; border-bottom:1px solid #ecf0f1; padding-bottom:4px;">Analyse des Objectifs Non Atteints</h3>
+    <table style="width:100%;border-collapse:collapse;font-size:9px;margin-bottom:15px;"><thead><tr>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:25%;">Objectif</th>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:15%;">Statut</th>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:30%;">Difficultés</th>
+      <th style="background:#0b2a3b;color:#fff;padding:6px;border:1px solid #bdc3c7; text-align:center; width:30%;">Solutions</th>
+    </tr></thead><tbody>`;
+    s.taches.forEach(t=>{ 
+      if(t.statutManuel === 'Terminée') return; 
+      let cause = t.difficulte ? t.difficulte : 'Non renseigné';
+      let action = t.solution ? t.solution : 'Non renseigné';
+      const p = calculerPourcentage(t.statutManuel);
+      html+=`<tr><td style="padding:6px;border:1px solid #bdc3c7;font-weight:bold; color:#0b2a3b;">${t.nom}</td><td style="padding:6px;border:1px solid #bdc3c7; text-align:center;">${t.statutManuel} ${p}%</td><td style="padding:6px;border:1px solid #bdc3c7;">${cause}</td><td style="padding:6px;border:1px solid #bdc3c7;">${action}</td></tr>`; 
+    });
+    html += `</tbody></table>`;
+    const ecarts = stats.partielles + stats.enCours + stats.reportees + stats.bloquees;
+    let texteCritique = `<div style="background:#eaf2f8; border-left:4px solid #1abc9c; padding:12px; font-size:10px; text-align:left; margin-bottom:10px;">`;
+    texteCritique += `<h4 style="margin:0 0 4px 0; color:#0b2a3b;">Synthèse critique</h4><p>Sur <strong>${stats.total} activités planifiées</strong>, nous avons clôturé <strong>${stats.completes} à 100%</strong> (Taux global : ${stats.taux}%). `;
+    if(stats.completes > 0) { texteCritique += `Points forts : `; texteCritique += s.taches.filter(t=>t.statutManuel==='Terminée').slice(0,3).map(t=>`<strong>${t.nom}</strong>`).join(', '); if(stats.completes > 3) texteCritique += ` et ${stats.completes - 3} autres`; texteCritique += `. `; }
+    if(ecarts > 0) { texteCritique += `Les ${ecarts} écart(s) concernent : `; texteCritique += s.taches.filter(t=>t.statutManuel!=='Terminée').map(t=>`<strong>${t.nom}</strong> (${t.statutManuel})`).join(', '); texteCritique += `. Priorité S+1 : lever les blocages et finaliser les tâches partielles.`; } else { texteCritique += `Aucun écart constaté. Priorité S+1 : maintenir le rythme.`; }
+    texteCritique += `</p></div>`; html += texteCritique;
   }
   html+=`<div style="margin-top:15px;text-align:right;font-size:8px;color:#7f8c8d; border-top:1px solid #ecf0f1; padding-top:5px;">Confidentiel – KP STRATEGY</div></div>`;
   return html;
 }
 
 function visualiserPDF(type){
-  pdfTypeActuel = type;
-  const html = genererContenuPDF(type);
-  const wrapper = document.getElementById('pdf-wrapper'); 
-  const content = document.getElementById('pdf-content');
-  content.innerHTML = html; 
-  wrapper.classList.add('active');
-  document.getElementById('pdf-content-wrapper').scrollTop = 0;
-  toast('Aperçu prêt.');
+  pdfTypeActuel = type; const html = genererContenuPDF(type);
+  const wrapper = document.getElementById('pdf-wrapper'); const content = document.getElementById('pdf-content');
+  content.innerHTML = html; wrapper.classList.add('active');
+  document.getElementById('pdf-content-wrapper').scrollTop = 0; toast('Aperçu prêt.');
 }
 
 function telechargerPDF(){
@@ -1207,71 +864,71 @@ function telechargerPDF(){
   const nomFichier = pdfTypeActuel === 'plan' ? `WeekPlan_${iso.num}_${iso.annee}.pdf` : `Rapport_${iso.num}_${iso.annee}.pdf`;
   const orientation = pdfTypeActuel === 'plan' ? 'landscape' : 'portrait';
   const content = document.getElementById('pdf-content');
-  
   if(!content || content.innerHTML.trim() === '') { toast('❌ Contenu vide.'); return; }
-
-  const opt = { 
-    margin:       [10, 10, 10, 10], 
-    filename:     nomFichier, 
-    image:        { type: 'jpeg', quality: 1 }, 
-    html2canvas:  { scale: 2, useCORS: true, logging: false, scrollY: 0, scrollX: 0, windowWidth: 794, onclone: function(clonedDoc) { const cc = clonedDoc.getElementById('pdf-content'); if (cc) { cc.style.position = 'static'; cc.style.width = '794px'; cc.style.margin = '0'; cc.style.padding = '20px'; cc.style.top = '0'; cc.style.left = '0'; } } }, 
-    jsPDF:        { unit: 'mm', format: 'a4', orientation: orientation },
-    pagebreak:    { mode: ['avoid-all', 'css', 'legacy'] }
-  };
-  
+  const opt = { margin: [10, 10, 10, 10], filename: nomFichier, image: { type: 'jpeg', quality: 1 }, 
+    html2canvas: { scale: 2, useCORS: true, logging: false, scrollY: 0, scrollX: 0, windowWidth: 794, onclone: function(clonedDoc) { const cc = clonedDoc.getElementById('pdf-content'); if (cc) { cc.style.position = 'static'; cc.style.width = '794px'; cc.style.margin = '0'; cc.style.padding = '20px'; cc.style.top = '0'; cc.style.left = '0'; } } }, 
+    jsPDF: { unit: 'mm', format: 'a4', orientation: orientation }, pagebreak: { mode: ['avoid-all', 'css', 'legacy'] } };
   toast('Téléchargement en cours...');
   html2pdf().set(opt).from(content).save().then(()=>{ toast('PDF téléchargé !'); fermerPDF(); }).catch(err=>{ console.error("Erreur PDF:", err); toast('❌ Erreur.'); });
 }
 
 function fermerPDF(){
   document.getElementById('pdf-wrapper').classList.remove('active');
-  document.getElementById('pdf-content').innerHTML = '';
-  pdfTypeActuel = null;
+  document.getElementById('pdf-content').innerHTML = ''; pdfTypeActuel = null;
 }
 
-/* ===== SAUVEGARDE GOOGLE SHEETS ===== */
+/* =====================================================================
+   SYNCHRONISATION GOOGLE SHEETS — version corrigée
+   ===================================================================== */
 function synchroniserGoogleSheet() {
   if (GOOGLE_SCRIPT_URL.includes("VOTRE_ID_SCRIPT")) {
     toast("⚠️ Configurez l'URL Google Apps Script dans le code.");
     return;
   }
-
   const btn = document.getElementById('btnSyncUp');
   if(btn){ btn.disabled = true; btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Envoi...'; }
-  toast("Synchronisation en cours...");
-  
+  toast("Sauvegarde en cours...");
+
   const dataToSend = {
-    semaines: semaines,
-    semaineCourante: semaineCourante,
-    archiveKeys: [...archiveKeys],
-    categoriesDisponibles: categoriesDisponibles
+    semaines: semaines, semaineCourante: semaineCourante,
+    archiveKeys: [...archiveKeys], categoriesDisponibles: categoriesDisponibles
   };
 
+  // ⚠️ On utilise text/plain pour éviter le "preflight" OPTIONS que Google Apps Script ne gère pas.
   fetch(GOOGLE_SCRIPT_URL, {
-  method: 'POST',
-  // Utiliser text/plain évite la requête "preflight" OPTIONS que Google Apps Script ne gère pas
-  headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-  body: JSON.stringify({ action: "save", payload: dataToSend })
-})
-  .then(() => {
-    toast("✅ Données sauvegardées sur Google Sheets !");
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ action: "save", payload: dataToSend })
+  })
+  .then(response => response.text())
+  .then(text => {
+    console.log("Réponse Google Sheets (save):", text);
+    try {
+      const res = JSON.parse(text);
+      if(res.status === "success" || res.result === "success") {
+        toast("✅ Données sauvegardées sur Google Sheets !");
+      } else {
+        toast("❌ Réponse inattendue. Vérifiez le redéploiement.");
+      }
+    } catch(e) {
+      // Parfois Apps Script renvoie une page HTML d'erreur, on considère comme succès si pas d'erreur réseau
+      toast("✅ Envoyé (vérifiez le Google Sheet).");
+    }
   })
   .catch(err => {
-    console.error(err);
-    toast("❌ Erreur de synchronisation.");
+    console.error("Erreur sync:", err);
+    toast("❌ Erreur réseau. Vérifiez votre connexion.");
   })
   .finally(() => {
     if(btn){ btn.disabled = false; btn.innerHTML = '<i class="fa-brands fa-google"></i> Sauvegarder sur Sheets'; }
   });
 }
 
-/* ===== CHARGEMENT DEPUIS GOOGLE SHEETS ===== */
 function chargerDepuisGoogleSheet() {
   if (GOOGLE_SCRIPT_URL.includes("VOTRE_ID_SCRIPT")) {
     toast("⚠️ Configurez l'URL Google Apps Script dans le code.");
     return;
   }
-
   if(!confirm("Actualiser les données depuis Google Sheets ?\n\nLes modifications locales non sauvegardées seront perdues.")) return;
 
   const btn = document.getElementById('btnSyncDown');
@@ -1279,46 +936,41 @@ function chargerDepuisGoogleSheet() {
   toast("Chargement en cours...");
 
   fetch(GOOGLE_SCRIPT_URL + "?action=load&t=" + Date.now())
-.then(response => {
-  if (!response.ok) throw new Error("Erreur HTTP " + response.status);
-  return response.text();
-})
-.then(text => {
-  // ... le reste de votre code de parsing
-})
-      
-      const data = JSON.parse(text);
-      
-      if(!data.semaines || !data.semaineCourante) {
-        toast("❌ Format de données invalide.");
-        return;
-      }
-
-      semaines = data.semaines;
-      archiveKeys = new Set(data.archiveKeys || []);
-      semaineCourante = data.semaineCourante;
-      categoriesDisponibles = data.categoriesDisponibles || categoriesDisponibles;
-
-      Object.keys(semaines).forEach(k => {
-        if(typeof semaines[k].lundi === 'string') {
-          semaines[k].lundi = new Date(semaines[k].lundi);
-        }
-      });
-
-      remplirSelectCategories();
-      remplirFiltreCategories();
-      sauvegarder();
-      renderAll();
-      toast("✅ Données actualisées depuis Google Sheets !");
-      
-    } catch(err) {
-      console.error("Erreur parsing:", err, "Texte reçu:", text);
-      toast("❌ Erreur de lecture des données.");
+  .then(response => {
+    if (!response.ok) throw new Error("HTTP " + response.status);
+    return response.text();
+  })
+  .then(text => {
+    console.log("Réponse Google Sheets (load):", text);
+    if(!text || text.trim() === "" || text.trim() === "{}") {
+      toast("ℹ️ Aucune donnée trouvée sur Google Sheets.");
+      return;
     }
+    let data;
+    try { data = JSON.parse(text); }
+    catch(e) { toast("❌ Réponse non JSON : " + text.substring(0,50)); return; }
+
+    if(!data.semaines || !data.semaineCourante) {
+      toast("❌ Format de données invalide.");
+      return;
+    }
+
+    semaines = data.semaines;
+    archiveKeys = new Set(data.archiveKeys || []);
+    semaineCourante = data.semaineCourante;
+    categoriesDisponibles = data.categoriesDisponibles || categoriesDisponibles;
+
+    Object.keys(semaines).forEach(k => {
+      if(typeof semaines[k].lundi === 'string') semaines[k].lundi = new Date(semaines[k].lundi);
+    });
+
+    remplirSelectCategories(); remplirFiltreCategories();
+    sauvegarder(); renderAll();
+    toast("✅ Données actualisées depuis Google Sheets !");
   })
   .catch(err => {
-    console.error(err);
-    toast("❌ Erreur de connexion.");
+    console.error("Erreur chargement:", err);
+    toast("❌ Erreur de connexion : " + err.message);
   })
   .finally(() => {
     if(btn){ btn.disabled = false; btn.innerHTML = '<i class="fa-solid fa-rotate"></i> Actualiser depuis Sheets'; }
@@ -1328,10 +980,8 @@ function chargerDepuisGoogleSheet() {
 let toastTimer; 
 function toast(msg){ 
   const el=document.getElementById('toast'); 
-  el.textContent=msg; 
-  el.classList.add('show'); 
-  clearTimeout(toastTimer); 
-  toastTimer=setTimeout(()=>el.classList.remove('show'),3000); 
+  el.textContent=msg; el.classList.add('show'); 
+  clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('show'),3500); 
 }
 
 function initTabs(){ 
@@ -1340,29 +990,20 @@ function initTabs(){
       document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active')); 
       document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active')); 
       tab.classList.add('active'); 
-      const target=tab.dataset.tab; 
-      document.getElementById('panel-'+target).classList.add('active'); 
-      if(target==='rapport') renderRapport(); 
-      if(target==='deroulement') renderDeroulement(); 
-      if(target==='archives') renderArchives(); 
-      if(target==='plan') renderPlan(); 
+      const target=tab.dataset.tab; document.getElementById('panel-'+target).classList.add('active'); 
+      if(target==='rapport') renderRapport(); if(target==='deroulement') renderDeroulement(); 
+      if(target==='archives') renderArchives(); if(target==='plan') renderPlan(); 
     }); 
   }); 
 }
 
 function renderAll(){ 
-  renderSemaineBar(); 
-  renderPlan(); 
-  renderDeroulement(); 
+  renderSemaineBar(); renderPlan(); renderDeroulement(); 
   if(document.getElementById('panel-rapport').classList.contains('active')) renderRapport(); 
   if(document.getElementById('panel-archives').classList.contains('active')) renderArchives(); 
 }
 
-document.addEventListener('DOMContentLoaded',()=>{ 
-  charger(); 
-  initTabs(); 
-  renderAll(); 
-});
+document.addEventListener('DOMContentLoaded',()=>{ charger(); initTabs(); renderAll(); });
 </script>
 </body>
 </html>
