@@ -889,12 +889,19 @@ function synchroniserGoogleSheet() {
   if(btn){ btn.disabled = true; btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Envoi...'; }
   toast("Sauvegarde en cours...");
 
+  // On s'assure que la semaine courante est bien enregistrée dans l'objet global 'semaines'
+  // avant l'envoi (au cas où des modifications viennent d'être faites).
+  sauvegarder(); 
+
+  // On envoie l'intégralité de l'objet 'semaines', qui contient TOUTES les semaines
+  // (Semaine 2, Semaine 16, Semaine 23, etc.)
   const dataToSend = {
-    semaines: semaines, semaineCourante: semaineCourante,
-    archiveKeys: [...archiveKeys], categoriesDisponibles: categoriesDisponibles
+    semaines: semaines, 
+    semaineCourante: semaineCourante,
+    archiveKeys: [...archiveKeys], 
+    categoriesDisponibles: categoriesDisponibles
   };
 
-  // ⚠️ On utilise text/plain pour éviter le "preflight" OPTIONS que Google Apps Script ne gère pas.
   fetch(GOOGLE_SCRIPT_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'text/plain;charset=utf-8' },
@@ -906,15 +913,14 @@ function synchroniserGoogleSheet() {
     try {
       const res = JSON.parse(text);
       if(res.status === "success" || res.result === "success") {
-        toast("✅ Données sauvegardées sur Google Sheets !");
+        toast("✅ Toutes les semaines ont été sauvegardées !");
       } else {
         toast("❌ Réponse inattendue. Vérifiez le redéploiement.");
       }
     } catch(e) {
-      // Parfois Apps Script renvoie une page HTML d'erreur, on considère comme succès si pas d'erreur réseau
       toast("✅ Envoyé (vérifiez le Google Sheet).");
     }
-  })
+  }) 
   .catch(err => {
     console.error("Erreur sync:", err);
     toast("❌ Erreur réseau. Vérifiez votre connexion.");
@@ -923,7 +929,6 @@ function synchroniserGoogleSheet() {
     if(btn){ btn.disabled = false; btn.innerHTML = '<i class="fa-brands fa-google"></i> Sauvegarder sur Sheets'; }
   });
 }
-
 function chargerDepuisGoogleSheet() {
   if (GOOGLE_SCRIPT_URL.includes("VOTRE_ID_SCRIPT")) {
     toast("⚠️ Configurez l'URL Google Apps Script dans le code.");
