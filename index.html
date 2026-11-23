@@ -377,7 +377,7 @@
 // CONFIGURATION GOOGLE SHEETS
 // Collez ici l'URL de votre déploiement Google Apps Script
 // =====================================================================
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxd4vUtCyvYJ3L9ygZw7Yf_u6-pz_sHZMMeTFEoZ7kmMRLvtaiJeFlFYuJKtH6GECQ/exec"; 
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/library/d/1v8RZ64otQoXYJTx9KFuS-w3bLMYWEf73TKDvMGSES-n0BIaNyXvffiwn/2"; 
 
 let categoriesDisponibles = [
   "Production de Médias", "Stratégie de Contenu", "Sourcing & Logistique",
@@ -1248,11 +1248,11 @@ function synchroniserGoogleSheet() {
   };
 
   fetch(GOOGLE_SCRIPT_URL, {
-    method: 'POST',
-    mode: 'no-cors',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ action: "save", payload: dataToSend })
-  })
+  method: 'POST',
+  // Utiliser text/plain évite la requête "preflight" OPTIONS que Google Apps Script ne gère pas
+  headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+  body: JSON.stringify({ action: "save", payload: dataToSend })
+})
   .then(() => {
     toast("✅ Données sauvegardées sur Google Sheets !");
   })
@@ -1279,13 +1279,13 @@ function chargerDepuisGoogleSheet() {
   toast("Chargement en cours...");
 
   fetch(GOOGLE_SCRIPT_URL + "?action=load&t=" + Date.now())
-  .then(response => response.text())
-  .then(text => {
-    try {
-      if(!text || text.trim() === "" || text.trim() === "{}") {
-        toast("ℹ️ Aucune donnée trouvée sur Google Sheets.");
-        return;
-      }
+.then(response => {
+  if (!response.ok) throw new Error("Erreur HTTP " + response.status);
+  return response.text();
+})
+.then(text => {
+  // ... le reste de votre code de parsing
+})
       
       const data = JSON.parse(text);
       
